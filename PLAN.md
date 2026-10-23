@@ -35,3 +35,22 @@ without decoration competing with the eyes and mouth.
   brows match the planned relaxed expression.
 - These are explored alternatives, not merged features. No major departures
   from the original plan were needed, and main still shows the neutral face.
+
+## Final decision
+
+Choose C, the sunset smile. Its curved mouth and brows communicate a friendly
+expression immediately, and the broad peach-to-violet transition remains clear
+at a small size. A's 120 beads create a lively border but compete with the facial
+features when reduced. B's cheek stickers are distinct, though they decorate the
+neutral expression rather than changing it. C best meets the original criterion.
+
+The status above records the earlier exploration checkpoint, when main was still
+neutral. Main now adopts C through a fast-forward after rebasing C onto the
+neutral buildFace() refactor; the chosen artwork is constructed inside that
+function, while mounting and Spin remain outside. A and B remain untouched on
+their original sibling branches for comparison and grading.
+
+## Assistance
+
+Codex assisted with the plan, original artwork, implementation, checks, and Git
+operations at the student's explicit request. Assisted commits include a trailer.
