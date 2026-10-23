@@ -1,3 +1,8 @@
+// @deno-types="./asset-url.d.ts"
+import starUrl from "./assets/star.svg?no-inline";
+// @deno-types="./asset-url.d.ts"
+import moonUrl from "./assets/moon.svg?no-inline";
+
 const portrait = document.querySelector<HTMLDivElement>("#portrait")!;
 const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 
@@ -5,7 +10,10 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute(
+  "aria-label",
+  "A face with a gold star and a blue crescent moon on its cheeks",
+);
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
@@ -58,6 +66,26 @@ mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
 face.append(mouth);
+
+// star.svg: original artwork made for this project in an SVG text editor with
+// Codex assistance. Source: ./assets/star.svg; permission: original project asset.
+const star = document.createElementNS("http://www.w3.org/2000/svg", "image");
+star.setAttribute("href", starUrl);
+star.setAttribute("x", "48");
+star.setAttribute("y", "102");
+star.setAttribute("width", "30");
+star.setAttribute("height", "30");
+face.append(star);
+
+// moon.svg: original artwork made for this project in an SVG text editor with
+// Codex assistance. Source: ./assets/moon.svg; permission: original project asset.
+const moon = document.createElementNS("http://www.w3.org/2000/svg", "image");
+moon.setAttribute("href", moonUrl);
+moon.setAttribute("x", "122");
+moon.setAttribute("y", "102");
+moon.setAttribute("width", "30");
+moon.setAttribute("height", "30");
+face.append(moon);
 
 portrait.append(face);
 
