@@ -24,3 +24,14 @@
 
 Choose the portrait whose expression stays friendly and clear when viewed small,
 without decoration competing with the eyes and mouth.
+
+## Exploration status
+
+- A explored on branch A: 120 circles form three colorful rings. The outer ring
+  sits just beyond the head, making the intended festival border easy to see.
+- B explored on branch B: two distinct, original SVG assets show a star and a
+  crescent on the cheeks. Both appear in development and the production build.
+- C explored on branch C: the peach-to-violet gradient, curved smile, and curved
+  brows match the planned relaxed expression.
+- These are explored alternatives, not merged features. No major departures
+  from the original plan were needed, and main still shows the neutral face.
